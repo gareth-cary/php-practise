@@ -1,4 +1,3 @@
-require("path/to/sendgrid-php/sendgrid-php.php");
 {
   "require": {
     "sendgrid/sendgrid": "~5.0.9"
