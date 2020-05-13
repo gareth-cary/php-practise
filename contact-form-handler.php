@@ -1,4 +1,6 @@
 <?php
+  require 'vendor/autoload.php';
+
   if (isset($_POST['submit'])) {
       $name = $_POST['name'];
       $subject = $_POST['subject'];
@@ -12,6 +14,4 @@
 
       mail($mailTo, $subject, $txt, $headers);
       header("location: index.php?mailsend");
-
-
   }
